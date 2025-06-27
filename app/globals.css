@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Primary color: #332f91 (converted to HSL) */
+    --primary: 243 51% 38%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary color: complementary to primary */
+    --secondary: 43 96% 58%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 243 51% 38%;
+
+    --radius: 0.5rem;
+
+    /* Semantic colors */
+    --system: 220 14% 96%;
+    --system-foreground: 220 14% 5%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 48 96% 10%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 142 71% 10%;
+
+    --info: 200 98% 39%;
+    --info-foreground: 200 98% 10%;
+
+    --error: 0 84% 60%;
+    --error-foreground: 0 84% 10%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary color: #332f91 (slightly lighter in dark mode) */
+    --primary: 243 51% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary color: complementary to primary */
+    --secondary: 43 96% 58%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 243 51% 50%;
+
+    /* Semantic colors - dark mode */
+    --system: 220 14% 20%;
+    --system-foreground: 220 14% 96%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 48 96% 98%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 142 71% 98%;
+
+    --info: 200 98% 39%;
+    --info-foreground: 200 98% 98%;
+
+    --error: 0 84% 60%;
+    --error-foreground: 0 84% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

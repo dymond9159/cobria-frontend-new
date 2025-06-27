@@ -1,0 +1,7 @@
+{
+  "app.welcome": "Bienvenue dans notre application",
+  "app.description": "C'est une application Next.js moderne",
+  "nav.home": "Accueil",
+  "nav.about": "À propos",
+  "nav.contact": "Contact"
+}
